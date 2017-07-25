@@ -5,17 +5,17 @@ function createTable(rows, columns){
   table.style = 'text-align: center';
   for (let i = 0; i < rows; i++) {
 	  table.appendChild(document.createElement('tr')); 	
-  }
-  for (let j = 0; j < columns; j++) {
-    if (i = 0){
-  	  const headerCell = document.createElement('th');
-  	  row = table.rows[i];
-  	  row.appendChild(headerCell);
-  	}else{
-  	  const cell = document.createElement('td');
-  	  row = table.rows[i];
-  	  row.appendChild(cell);
-  	}
+    for (let j = 0; j < columns; j++) {
+      if (i = 0){
+    	  const headerCell = document.createElement('th');
+    	  row = table.rows[i];
+    	  row.appendChild(headerCell);
+    	}else{
+    	  const cell = document.createElement('td');
+    	  row = table.rows[i];
+    	  row.appendChild(cell);
+    	}
+    }
   }
   document.body.appendChild(table);
 }
