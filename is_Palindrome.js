@@ -1,17 +1,11 @@
 function isPalindrome(string) {
   let newString;
-  let newMass;
   let palindromString;
   if (typeof string !== 'number'){
     newString = string.toLowerCase();
   } else {
-    newString = string.toString();
+    newString = string.toString().toLowerCase();
   }
-  newMass = newString.split('').reverse();
-  palindromString = newMass.join('');
-  if (palindromString === newString){
-    return true;
-  } else {
-    return false;
-  }
+  palindromString = newString.split('').reverse().join('');
+  return palindromString === newString  ? true : false;
 } 
