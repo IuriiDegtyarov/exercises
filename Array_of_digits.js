@@ -1,3 +1,3 @@
-function listOfDigits(digits) {
-  return digits.toString().split('');
+function listOfDigits(numb) {
+  return numb.toString().split('');
 } 
